@@ -17,7 +17,7 @@ class Game:
         self.clock = pygame.time.Clock()
 
         # create game grid
-        self.grid = Grid(self.settings.screen_width, self.settings.screen_height)
+        self.grid = Grid(self.settings)
 
     def run(self):
         running = True

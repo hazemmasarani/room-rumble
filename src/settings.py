@@ -7,15 +7,18 @@ class Settings:
         self.window_caption = "Room Rumble"
         self.bg_color = (0, 0, 0)
         self.fps = 60
+        self.grid_width = 100
+        self.grid_height = 50
+        self.block_size = 13
+        self.origin_x = 0
+        self.origin_y = 0
 
-    def reset_settings(self, screen_width = None, screen_height = None):
-        """
-            Method to reset settings to their initial state if needed.
-        """
-        self.window_caption = "Room Rumble"
-        self.bg_color = (0, 0, 0) 
-        self.fps = 60
-        if screen_width:
-            self.screen_width = screen_width
-        if screen_height:
-            self.screen_height = screen_height
+        # rooms setting (dimenssions are with block size)
+        self.rooms_min_count = 9
+        self.rooms_max_count = 16
+        self.room_min_width = 4
+        self.room_max_width = 8
+        self.room_min_height = 4
+        self.room_max_height = 8
+        self.room_default_color = (90, 90, 90)
+
